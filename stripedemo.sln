@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stripedemo", "stripedemo\stripedemo.csproj", "{9C969511-BA58-48AE-9C1F-81D822897CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stripedemo.Tests", "stripedemo.Tests\stripedemo.Tests.csproj", "{6F197C5A-2231-4383-990C-12E630A725CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C969511-BA58-48AE-9C1F-81D822897CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C969511-BA58-48AE-9C1F-81D822897CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C969511-BA58-48AE-9C1F-81D822897CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C969511-BA58-48AE-9C1F-81D822897CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F197C5A-2231-4383-990C-12E630A725CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F197C5A-2231-4383-990C-12E630A725CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F197C5A-2231-4383-990C-12E630A725CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F197C5A-2231-4383-990C-12E630A725CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

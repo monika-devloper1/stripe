@@ -1,0 +1,178 @@
+﻿<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.0/css/mdb.min.css" rel="stylesheet">
+<!-- Material form login -->
+<style>
+    .card{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    }
+    .card {
+        flex-direction: inherit !important;
+    }
+
+</style>
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Stripe API Demo</strong>
+    </h5>
+    <br />
+    <div class="col-md-12">
+        <table class="table">
+            <tr>
+                <td>
+                    <div class="  col-md-12 mb-4">
+                        <div class="card">
+                            <h5 class="card-header success-color white-text text-center py-4">
+                                <strong>Add customer in stripe</strong>
+                            </h5>
+
+                            <!--Card content-->
+                            <div class="card-body px-lg-5 pt-0">
+
+                                <!-- Form -->
+                                @using (Html.BeginForm("Create", "Home"))
+                                {
+                                    <!-- name -->
+                                    <div class="md-form">
+                                        <input type="text" placeholder="Name" name="name" id="name" class="form-control">
+
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="md-form">
+                                        <input type="email" placeholder="Account Email Id" name="email" id="materialLoginFormEmail" class="form-control">
+
+                                    </div>
+
+                                    <!-- Description -->
+                                    <div class="md-form">
+                                        <input type="text" placeholder="Description" name="description" id="Description" class="form-control">
+                                    </div>
+
+
+                                    <!-- Sign in button -->
+                                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Add Customer</button>
+
+
+                                }
+                                <!-- Form -->
+
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="  col-md-12 mb-4">
+                        <div class="card">
+                            <h5 class="card-header success-color white-text text-center py-4">
+                                <strong>Add customer in stripe<br />with subscription</strong>
+                            </h5>
+
+                            <!--Card content-->
+                            <div class="card-body px-lg-5 pt-0">
+
+                                <!-- Form -->
+                                @using (Html.BeginForm("Sheduldeplan", "Home"))
+                                {
+                                    <!-- Select product -->
+                                    <div class="md-form">
+                                        <select class="form-control" name="palnid">
+                                            <option>--Select Plan--</option>
+                                            <option value="plan_GXR8ReTglNMgtd">Year plan(Month/1)</option>
+                                            <option value="plan_GWmTMq96rMEdzS">
+                                                Monthly Plan(month/2)
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <!-- name -->
+                                    <div class="md-form">
+                                        <input type="text" placeholder="Name" name="name" id="name" class="form-control">
+
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="md-form">
+                                        <input type="email" placeholder="Account Email Id" name="email" id="materialLoginFormEmail" class="form-control">
+
+                                    </div>
+
+                                    <!-- Description -->
+                                    <div class="md-form">
+                                        <input type="text" placeholder="Description" name="description" id="Description" class="form-control">
+                                    </div>
+
+
+                                    <!-- Sign in button -->
+                                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Subscription Add</button>
+
+
+
+                                }
+                                <!-- Form -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+
+        
+    </div>
+    <div class="col-md-12">
+        <table class="table">
+            <tr>
+                <td>
+                    <div class="  col-md-5 mb-4">
+                        <div class="card">
+                            <h5 class="card-header success-color white-text text-center py-4">
+                                <strong>Card</strong>
+                            </h5>
+
+                            <!--Card content-->
+                            <div class="card-body px-lg-5 pt-0">
+
+                                <!-- Form -->
+                                @using (Html.BeginForm("Pay", "Home"))
+                                {
+                                    <!-- name -->
+                                    <div class="md-form">
+                                        Product-1
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="md-form">
+                                        Price : 2 Rs
+                                        <input type="hidden" name="pricedata" value="2" />
+                                    </div>
+
+                                    <!-- Description -->
+                                   
+
+                                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Pay</button>
+
+                                    <!-- Sign in button -->
+
+
+                                }
+                                <!-- Form -->
+
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                
+            </tr>
+           
+        </table>
+
+
+    </div>
+<!-- Material form login -->
